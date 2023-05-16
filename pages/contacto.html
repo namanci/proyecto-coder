@@ -54,40 +54,41 @@
         <div class="titulo">
             <h1>Contacto</h1>
             <h3>Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
-            <br>
         </div>
         <div class="centrado">
             <form action="">
                 <fieldset>
                     <legend>Formulario de contacto</legend>
                         <br>
-                        <div>
-                            <label for="name">Nombre</label>
-                            <input type="text" placeholder="Ingresa tu nombre">
+                        <br>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu nombre">
                         </div>
                         <br>
-                        <div>
-                            <label for="surname">Apellido</label>
-                            <input type="text" placeholder="Ingresa tu apellido">
+                        <div class="mb-3">
+                            <label for="surname" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu apellido">
                         </div>
                         <br>
-                        <div>
-                            <label for="email">Correo electrónico*</label>
-                            <input type="email" required placeholder="Ingresa tu e-mail">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico*</label>
+                            <input type="email" class="form-control" required placeholder="Ingresa tu e-mail">
                         </div>
                         <br>
-                        <div>
-                            <label for="country">País</label>
-                            <select name="country" id="country">
-                                <option value="ar">Argentina</option>
-                                <option value="uy">Uruguay</option>
-                                <option value="cl">Chile</option>
+                        <div class="mb-3">
+                            <label for="country" class="form-label">País</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>- Selecciona tu País -</option>
+                                <option value="1">Argentina</option>
+                                <option value="2">Uruguay</option>
+                                <option value="3">Chile</option>
                             </select>
                         </div>
                         <br>
-                        <div>
-                            <label for="comment">Comentario</label><br>
-                            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Comentario</label><br>
+                            <textarea class="form-control" name="comment" id="" cols="30" rows="10"></textarea>
                         </div>
                         <br>
                         <div>
