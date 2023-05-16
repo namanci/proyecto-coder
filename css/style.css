@@ -72,7 +72,8 @@ body {
 }
 
 .articulo {
-    margin-bottom: 15px;
+    display: flex;
+    margin-bottom: 25px;
 }
 
 .galeria {
@@ -83,30 +84,30 @@ body {
 }
 
 .tarjeta-celeste {
+    display: flex;
     background-color: #d6dcea;
-    padding: 12px 0;
+    padding: 10px;
     border-radius: 12px;
 }
 
 .art-text {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
+    width: 100%;
 }
 
 .art-image {
-    width: 48%;
-    display: inline-block;
+    width: 100%;
     text-align: center;
+    align-self: center;
 }
 
 .art-image img {
-    max-width: 450px;
+    width: 95%;
     border-radius: 12px;
 }
 
 .centrado {
     text-align: center;
+    padding: 15px;
 }
 
 .art-boton {
@@ -167,6 +168,23 @@ body {
     .menu li a {
         font-size: 0.75rem;
     }
+
+    .articulo {
+        flex-direction: column-reverse;
+    }
+
+    .art-image {
+        margin-bottom: 15px;
+    }
+
+    .art-image img {
+        width: 100%;
+    }
+    
+    .tarjeta-celeste {
+        display: block;
+    }
+
     .footer {
         font-size: 0.75rem;
         border-radius: 0;
