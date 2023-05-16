@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +17,37 @@
             </div>
             <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="bio.html">Biografía</a></li>
-                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="./bio.html">Biografía</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
                 <li><a href="#">Muestras</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li id="offcanvas_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><a href="#">Menú</a></li>
             </ul>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./bio.html">Biografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Muestras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="ancho-max">
@@ -57,8 +83,9 @@
         </section>
     </main>
     <footer class="ancho-max footer">
-        <h4>Ataliva Gallo • 2023 | <a class="boton-arriba" href="#arriba">Ir arriba ⬆️</a></h4>
-        <h4>Desarrollado por Nahuel Mancini</h4>
+        <div>Ataliva Gallo • Copyright© 2023</div>
+        <div><a class="boton-arriba" href="#arriba">Ir arriba ⬆️</a></div>
+        <div>Desarrollado por Nahuel Mancini</div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

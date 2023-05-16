@@ -137,6 +137,8 @@ body {
 }
 /* Estilos del Footer */
 .footer {
+    display: flex;
+    justify-content: space-between;
     padding: 25px;
     background-color: #000;
     color:#fff;
@@ -165,6 +167,11 @@ body {
     .menu li a {
         font-size: 0.75rem;
     }
+    .footer {
+        font-size: 0.75rem;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
 }
 /* Mobile */
 @media screen and (max-width: 480px) {
@@ -173,5 +180,8 @@ body {
     }
     #offcanvas_btn {
         display: initial;
+    }
+    .boton-arriba {
+        display: none;
     }
 }
