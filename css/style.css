@@ -15,29 +15,32 @@ body {
     margin: 0 auto;
 }
 /* Estilos del Header */
+/* Barra de navegación FLEX */
 .navigation {
-    padding: 5px 15px;
-    background-color: white;
-    margin-bottom: 20px;
+    height: 85px;
+    background-color: #fff;
     border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul {
+    margin-bottom: inherit;
 }
 
 .logo {
-    display: inline-block;
-    width: 19%;
+    margin: auto 15px;
 }
 
 .menu {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     list-style: none;
-    width: 80%;
-    text-align: right;
-    position: relative;
-    bottom: 24px;
+    padding: 25px;
 }
 
-.menu li {
-    display: inline-block;
+#offcanvas_btn {
+    display: none;
 }
 
 .menu li a {
@@ -145,4 +148,30 @@ body {
 .boton-arriba {
     text-decoration: none;
     color: #ffffe2;
+}
+
+/* Media Queries */
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .navigation {
+        height: 60px;
+        border-radius: 0;
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+
+    .menu li a {
+        font-size: 0.75rem;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .menu li {
+        display: none;
+    }
+    #offcanvas_btn {
+        display: initial;
+    }
 }

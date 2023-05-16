@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Ataliva Gallo</title>
 </head>
@@ -14,7 +15,7 @@
     <header class="ancho-max">
         <nav class="navigation">
             <div class="logo">
-                <img src="./images/logo.png" id="arriba" alt="Ataliva Gallo">
+                <a href="./index.html"><img src="./images/logo.png" id="arriba" alt="Ataliva Gallo"></a>
             </div>
             <ul class="menu">
                 <li><a href="#">Inicio</a></li>
@@ -22,7 +23,19 @@
                 <li><a href="./pages/galeria.html">Galería</a></li>
                 <li><a href="./pages/muestras.html">Muestras</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li id="offcanvas_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><a href="#">Menú</a></li>
             </ul>
+            <!-- Menú Offcanvas (Bootstrap) -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    ...
+                </div>
+            </div>
+            
         </nav>
     </header>
     <!-- Sección del contenido principal o Main -->
@@ -74,5 +87,6 @@
             <h4>Ataliva Gallo • 2023 | <a class="boton-arriba" href="#arriba">Ir arriba ⬆️</a></h4>
             <h4>Desarrollado por Nahuel Mancini</h4>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
