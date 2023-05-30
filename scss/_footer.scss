@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: $oscuro;
+    color: $claro;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    div {}
+    div {
+        .boton-arriba {
+            text-decoration: none;
+            color: $yellow;
+        }
+    }
+    div {}
+}

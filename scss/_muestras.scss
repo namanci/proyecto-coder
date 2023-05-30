@@ -1,0 +1,17 @@
+.articulos {
+    article {
+        h2 {}
+        br {}
+        p {}
+        br {}
+        .muestra-image {
+            text-align: center;
+            img {
+                max-width: 100%;
+                border-radius: 25px;
+                margin-bottom: 25px;
+                width: 750px;
+            }
+        }
+    }
+}
