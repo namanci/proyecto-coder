@@ -51,14 +51,18 @@
                 </div>
             </div>
         </nav>
+        <ul class="redes">
+            <li><img src="../images/face_icon.png" alt="Facebook Icon"><a href="http://facebook.com" target="_blank"> Facebook</a></li>
+            <li><img src="../images/insta_icon.png" alt="Instagram Icon"><a href="http://instagram.com" target="_blank"> Instagram</a></li>
+        </ul>
     </header>
     <main class="ancho-max">
         <div class="titulo">
             <h1>Contacto</h1>
             <h3>Ponte en contacto con nosotros por cualquier consulta.</h3>
         </div>
-        <div class="centrado">
-            <form action="">
+        <div class="centrado row">
+            <form action="" class="col-md-8 contacto">
                 <fieldset>
                     <legend>Formulario de contacto</legend>
                         <br>
@@ -94,12 +98,28 @@
                         </div>
                         <br>
                         <div>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Borrar">
+                            <input type="submit" value="Enviar" class="form-boton">
+                            <input type="reset" value="Borrar" class="form-boton">
                         </div>
                         <br>
                 </fieldset>
             </form>
+            <aside class="col-md-4">
+                <form action="" class="newsletter">
+                    <fieldset>
+                        <legend>Suscribite a nuestro Newsletter</legend>
+                        <br>
+                        <br>
+                        <p>Únete al Newsletter ingresando tu correo electrónico y recibe todas nuestras novedades. Entérate de Muestras o Expos, información sobre venta de cuadros y más.</p>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" required placeholder="Correo Electrónico*">
+                        </div>
+                        <div>
+                            <input type="submit" value="Suscribirse" class="form-boton2">
+                        </div>
+                    </fieldset>
+                </form>
+            </aside>
             <br>
         </div>
     </main>

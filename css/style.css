@@ -37,6 +37,19 @@ body {
           border-radius: 6px; }
       .ancho-max .navigation .menu #offcanvas_btn {
         display: none; }
+  .ancho-max .redes {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: right;
+    padding-right: 25px;
+    margin-top: 10px; }
+    .ancho-max .redes li a {
+      padding-right: 10px;
+      text-decoration: none;
+      color: #008000; }
+      .ancho-max .redes li a:hover {
+        color: #262626; }
 
 .ancho-max .titulo {
   margin: 15px; }
@@ -45,7 +58,7 @@ body {
     font-weight: bold; }
 
 .ancho-max .articulos {
-  background-color: #ffffe2;
+  background-color: #fbeacc;
   border-radius: 25px;
   padding: 25px;
   margin: 20px; }
@@ -59,10 +72,11 @@ body {
         color: #000;
         padding: 12px;
         background-color: #d6dcea;
-        border-radius: 6px; }
+        border-radius: 6px;
+        border-style: none; }
         .ancho-max .articulos .articulo .art-text .art-boton:hover {
-          background-color: #000;
-          color: #fff; }
+          color: #fff;
+          background-color: #000; }
     .ancho-max .articulos .articulo .art-image {
       width: 100%;
       text-align: center;
@@ -91,12 +105,12 @@ body {
           text-decoration: none;
           color: #000;
           padding: 12px;
-          background-color: #ffffe2;
+          background-color: #fbeacc;
           border-radius: 6px;
-          text-align: center; }
+          border-style: none; }
           .ancho-max .articulos .tarjeta-celeste .art-text .centrado .art-boton2:hover {
-            background-color: #000;
-            color: #fff; }
+            color: #fff;
+            background-color: #000; }
 
 .articulos .bio-image {
   text-align: center; }
@@ -149,7 +163,43 @@ body {
 
 .centrado {
   text-align: center;
-  padding: 15px; }
+  padding: 15px;
+  margin-left: 0;
+  margin-right: 0; }
+
+.contacto {
+  background-color: #d6dcea;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding: 20px; }
+
+.newsletter {
+  background-color: #fbeacc;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding: 20px; }
+
+.form-boton {
+  text-decoration: none;
+  color: #000;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 6px;
+  border-style: none; }
+  .form-boton:hover {
+    color: #fff;
+    background-color: #000; }
+
+.form-boton2 {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  background-color: #000;
+  border-radius: 6px;
+  border-style: none; }
+  .form-boton2:hover {
+    color: #000;
+    background-color: #d6dcea; }
 
 .footer {
   display: flex;
@@ -162,7 +212,7 @@ body {
   margin-bottom: 20px; }
   .footer div .boton-arriba {
     text-decoration: none;
-    color: #ffffe2; }
+    color: #fbeacc; }
 
 /* Media Queries */
 /* Tablet */
@@ -173,6 +223,8 @@ body {
   .logo img {
     max-width: 100px; }
   .menu li a {
+    font-size: 0.75rem; }
+  .ancho-max .redes li a {
     font-size: 0.75rem; }
   .articulo {
     flex-direction: column-reverse; }

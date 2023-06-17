@@ -34,4 +34,22 @@
             }
         }
     }
+    .redes {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: right;
+        padding-right: 25px;
+        margin-top:10px;
+        li {
+            a {
+                padding-right: 10px;
+                text-decoration: none;
+                color: $green;
+                &:hover {
+                    color:#262626;
+                }
+            }
+        }
+    }
 }

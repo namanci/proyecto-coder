@@ -1,4 +1,28 @@
 .centrado {
     text-align: center;
     padding: 15px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.contacto {
+    background-color: $lightblue;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.newsletter {
+    background-color: $yellow;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.form-boton {
+    @include botones($claro, $oscuro, $oscuro, $claro)
+}
+
+.form-boton2 {
+    @include botones($oscuro, $claro, $lightblue, $oscuro)
 }
